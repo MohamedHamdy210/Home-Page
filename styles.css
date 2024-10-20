@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.75fr;
+}
+header {
+  grid-row: 1/2;
+  background-color: #0891b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.pic {
+  margin: 1rem 0 1rem 1rem;
+}
+.pic img {
+  max-width: 17rem;
+}
+.pic h1 {
+  transform: translate(0.5rem, -4rem);
+  color: white;
+}
+.aboutMe {
+  font-size: x-large;
+  background-color: white;
+  padding: 1rem;
+  transform: translate(0, -20px);
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.icons a {
+  width: 5rem;
+}
+.icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main {
+  padding: 1rem;
+}
+.projects {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.card {
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  box-shadow: 1px 1px 1px 1px #d9d9d9;
+}
+
+.projectName {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectName a {
+  width: 10%;
+}
+main > h1 {
+  margin-left: 4rem;
+}
+.card p {
+  margin: 0.5rem;
+  font-size: large;
+}
+
+footer {
+  grid-row: 3/4;
+  background-color: #0891b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer > img {
+  margin: 1rem;
+  max-width: 23rem;
+}
+.contacts {
+  color: white;
+  padding: 1rem;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.info {
+  display: flex;
+  gap: 1rem;
+}
+.info img {
+  width: 8%;
+}
+@media (max-width: 600px) {
+  body {
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+  }
+  header {
+    flex-direction: column;
+  }
+
+  .pic img {
+    max-width: 30rem;
+  }
+  .pic h1 {
+    transform: translate(3rem, -4rem);
+    font-size: 3rem;
+    color: white;
+  }
+  .aboutMe {
+    transform: translate(0, 1rem);
+    background-color: white;
+    max-width: 600px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .icons {
+    gap: 3rem;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+
+  .projects {
+    margin: 0;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > img {
+    margin: 1rem;
+    max-width: 30rem;
+  }
+  .contacts {
+    align-items: center;
+    gap: 1rem;
+  }
+  .info {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+  }
+
+  .pic img {
+    max-width: 28rem;
+    transform: translate(0, 3rem);
+  }
+  .pic h1 {
+    transform: translate(2rem, -4rem);
+    font-size: 3rem;
+    color: white;
+  }
+  .aboutMe {
+    transform: translate(0, 1rem);
+    background-color: white;
+    max-width: 600px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .icons {
+    gap: 3rem;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+
+  .projects {
+    margin: 0;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 23rem;
+  }
+  
+  .contacts {
+    align-items: center;
+    gap: 1rem;
+  }
+  .info {
+    justify-content: center;
+  }
+}
