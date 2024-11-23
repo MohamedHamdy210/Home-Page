@@ -7,6 +7,7 @@ body {
   font-family: "Playfair Display", serif;
   display: grid;
   grid-template-rows: .75fr 2fr 0.75fr;
+  overflow-x: hidden;
 }
 header {
   grid-row: 1/2;
@@ -19,7 +20,7 @@ header {
   margin: 1rem 0 1rem 1rem;
 }
 .pic img {
-  max-width: 17rem;
+  max-width: 99rem;
 }
 .pic h1 {
   transform: translate(0.5rem, -4rem);
@@ -112,9 +113,9 @@ footer > img {
   header {
     flex-direction: column;
   }
-
+  .pic{max-width: 100dvw;}
   .pic img {
-    max-width: 30rem;
+    max-width: 25rem;
   }
   .pic h1 {
     transform: translate(3rem, -4rem);
