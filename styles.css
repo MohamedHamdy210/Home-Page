@@ -20,7 +20,9 @@ header {
   margin: 1rem 0 1rem 1rem;
 }
 .pic img {
-  max-width: 99rem;
+  max-width: 17rem;
+  object-fit: contain;
+  
 }
 .pic h1 {
   transform: translate(0.5rem, -4rem);
