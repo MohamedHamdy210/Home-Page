@@ -115,15 +115,12 @@ footer > img {
   header {
     flex-direction: column;
   }
-  .pic{
-    max-width: 100dvw;
-  }
+  
   .pic img {
-    margin-right: 1rem;
-    max-width: 25rem;
+    max-width: 23rem;
   }
   .pic h1 {
-    transform: translate(3rem, -4rem);
+    transform: translate(0, 0);
     font-size: 3rem;
     color: white;
   }
@@ -167,7 +164,7 @@ footer > img {
     justify-content: center;
   }
 }
-@media (max-width: 992px) {
+@media( (min-width:601) and (max-width: 992px) ){
   body {
     grid-template-rows: 0.5fr 2fr 0.25fr;
   }
