@@ -115,8 +115,9 @@ footer > img {
   header {
     flex-direction: column;
   }
-  .pic{max-width: 100dvw;}
+  
   .pic img {
+    margin-left: 1rem;
     max-width: 25rem;
   }
   .pic h1 {
