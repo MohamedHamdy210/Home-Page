@@ -110,7 +110,7 @@ footer > img {
 }
 @media (max-width: 600px) {
   body {
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.35fr;
   }
   header {
     flex-direction: column;
