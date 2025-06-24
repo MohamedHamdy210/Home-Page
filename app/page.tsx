@@ -100,6 +100,24 @@ export default function Portfolio() {
       live: "https://amazon-clone-teal-ten-38.vercel.app/",
     },
     {
+      title: "MCDB",
+      description:
+        " Movie browsing platform allows users to explore trending movies and view detailed information (ratings, release dates, overviews).",
+      image: mcdb,
+      technologies: ["React", "Api"],
+      github: "https://github.com/MohamedHamdy210/MC",
+      live: "https://mc-eight-sand.vercel.app/",
+    },
+    {
+      title: "Advanced dashboard",
+      description:
+      " Admin dashboard designed for data visualization and management, featuring charts, tables, and user management functionalities.",
+      image: advanced,
+      technologies: ["React", "Material UI", "Nivo Charts", "FullCalendar"],
+      github: "https://github.com/MohamedHamdy210/Mui-dashboard",
+      live: "https://mui-dashboard-nine.vercel.app/",
+    },
+    {
       title: "Online Code Editor",
       description:
         " React based online code editor that enables users to write, edit, and execute HTML, CSS, and JavaScript in real-time.",
@@ -107,24 +125,6 @@ export default function Portfolio() {
       technologies: ["React", "Material UI", "CodeMirror"],
       github: "https://github.com/MohamedHamdy210/RCE",
       live: "https://rce-tawny.vercel.app/",
-    },
-    {
-      title: "Advanced dashboard",
-      description:
-        " Admin dashboard designed for data visualization and management, featuring charts, tables, and user management functionalities.",
-      image: advanced,
-      technologies: ["React", "Material UI", "Nivo Charts", "FullCalendar"],
-      github: "https://github.com/MohamedHamdy210/Mui-dashboard",
-      live: "https://mui-dashboard-nine.vercel.app/",
-    },
-    {
-      title: "MCDB",
-      description:
-        " Movie browsing platform allows users to explore trending movies and view detailed information (ratings, release dates, overviews).",
-      image: mcdb,
-      technologies: ["React", "Framer motion", "Api"],
-      github: "https://github.com/MohamedHamdy210/MC",
-      live: "https://mc-eight-sand.vercel.app/",
     },
     {
       title: "The Shop",
@@ -195,7 +195,7 @@ export default function Portfolio() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen  bg-background">
       {/* Navigation */}
 
       <Navbar>
@@ -289,7 +289,7 @@ export default function Portfolio() {
         </MobileNav>
       </Navbar>
       {/* Hero Section */}
-      <section className="container flex min-h-[80vh] items-center justify-center py-12">
+      <section className="   flex min-h-[80vh] items-center justify-center py-12">
         <div className="flex flex-col items-center space-y-8 text-center">
           <div className="space-y-4">
             <h1
@@ -382,7 +382,7 @@ export default function Portfolio() {
       <section
         id="about"
         ref={aboutRef}
-        className={`container py-12 transition-all duration-1000 ${
+        className={` py-12 transition-all duration-1000 ${
           visibleSections.has("about")
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-12"
@@ -434,7 +434,7 @@ export default function Portfolio() {
       <section
         id="projects"
         ref={projectsRef}
-        className={`container py-12 transition-all duration-1000 delay-200 ${
+        className={` py-12 transition-all duration-1000 delay-200 ${
           visibleSections.has("projects")
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-12"
@@ -453,7 +453,7 @@ export default function Portfolio() {
                 key={index}
                 className={`overflow-hidden group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
                   visibleSections.has("projects")
-                    ? "opacity-100 translate-y-0"
+                      ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
                 }`}
                 style={{
@@ -522,7 +522,7 @@ export default function Portfolio() {
       <section
         id="skills"
         ref={skillsRef}
-        className={`container py-12 transition-all duration-1000 delay-300 ${
+        className={` py-12 transition-all duration-1000 delay-300 ${
           visibleSections.has("skills")
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-12"
@@ -566,7 +566,7 @@ export default function Portfolio() {
       <section
         id="contact"
         ref={contactRef}
-        className={`container py-12 transition-all duration-1000 delay-400 ${
+        className={` py-12 transition-all duration-1000 delay-400 ${
           visibleSections.has("contact")
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-12"
@@ -624,7 +624,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="border-t px-2 py-6">
-        <div className="container flex items-center justify-between">
+        <div className=" flex items-center justify-between">
           <p className="text-sm text-muted-foreground">
             © 2025 Mohamed Hamdy. All rights reserved.
           </p>
