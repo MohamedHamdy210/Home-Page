@@ -46,6 +46,7 @@ import assembly from "@/public/Assembly.png";
 import cv from "@/public/CV.png";
 import tdl from "@/public/tdl.png";
 import mohamed from "@/public/mohamed.jpg";
+import school from "@/public/school.png";
 
 export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -91,9 +92,25 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "The School Dashboard",
+      description:
+        "A Next.js application with role-based access, real-time stats, calendar events, recharts, and responsive TailwindCSS design, featuring form validation with React Hook Form and Zod.",
+      image: school,
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Zod",
+        "React-Hook-Form",
+        "Recharts",
+      ],
+      github: "https://github.com/MohamedHamdy210/The-School",
+      live: "https://the-school-eight.vercel.app/",
+    },
+    {
       title: "Amazon Clone",
       description:
-        " fully responsive e-commerce application modeled after Amazon, offering product browsing, category filtering, user authentication, and cart management.",
+        " Fully responsive e-commerce application modeled after Amazon, offering product browsing, category filtering, user authentication, and cart management.",
       image: amazon,
       technologies: ["React", "TypeScript", "Redux Toolkit", "Firebase"],
       github: "https://github.com/MohamedHamdy210/amazon-clone",
@@ -111,7 +128,7 @@ export default function Portfolio() {
     {
       title: "Advanced dashboard",
       description:
-      " Admin dashboard designed for data visualization and management, featuring charts, tables, and user management functionalities.",
+        " Admin dashboard designed for data visualization and management, featuring charts, tables, and user management functionalities.",
       image: advanced,
       technologies: ["React", "Material UI", "Nivo Charts", "FullCalendar"],
       github: "https://github.com/MohamedHamdy210/Mui-dashboard",
