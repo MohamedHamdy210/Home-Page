@@ -47,6 +47,7 @@ import cv from "@/public/CV.png";
 import tdl from "@/public/tdl.png";
 import mohamed from "@/public/mohamed.jpg";
 import school from "@/public/school.png";
+import zentry from "@/public/Zentry.png";
 
 export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -91,6 +92,22 @@ export default function Portfolio() {
   }, []);
 
   const projects = [
+    {
+      title: "Zentry Clone",
+      description:
+        "A responsive and animation-rich clone of the Zentry landing page, This project focuses on creating an immersive frontend experience using scroll-triggered animations, video transitions, and dynamic UI components",
+      image: zentry,
+      technologies: [
+        "React",
+        "Vite",
+        "GSAP",
+        "Tailwind CSS",
+        "React-use",
+        "React-icons",
+      ],
+      github: "https://github.com/MohamedHamdy210/Zentry-clone",
+      live: "https://zentry-clone-bay-seven.vercel.app/",
+    },
     {
       title: "The School Dashboard",
       description:
@@ -193,10 +210,11 @@ export default function Portfolio() {
   const skills = [
     "React",
     "Next.js",
+    "TypeScript",
     "Redux Toolkit",
     "Tailwind CSS",
+    "GSAP",
     "Material UI",
-    "TypeScript",
     "JavaScript",
     "Framer Motion",
     "sass",
