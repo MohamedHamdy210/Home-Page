@@ -134,7 +134,7 @@ export default function Portfolio() {
       live: "https://amazon-clone-teal-ten-38.vercel.app/",
     },
     {
-      title: "MCDB",
+      title: "Movies DB",
       description:
         " Movie browsing platform allows users to explore trending movies and view detailed information (ratings, release dates, overviews).",
       image: mcdb,
