@@ -93,6 +93,19 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "To-Do List",
+      description:
+        "A responsive and intuitive task management web application that allows users to create, edit, delete, and organize daily tasks efficiently. The app features real-time data synchronization, image attachments, and user authentication, providing a personalized experience for each user.",
+      image: tdl,
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Firebase Authentication","FireStore","Cloudinary"],
+      github: "https://github.com/MohamedHamdy210/To-Do",
+      live: "https://to-do-five-lyart.vercel.app/",
+    },
+    {
       title: "Zentry Clone",
       description:
         "A responsive and animation-rich clone of the Zentry landing page, This project focuses on creating an immersive frontend experience using scroll-triggered animations, video transitions, and dynamic UI components",
@@ -196,15 +209,6 @@ export default function Portfolio() {
       github: "https://github.com/MohamedHamdy210/my-cv-application",
       live: "https://my-cv-application.vercel.app/",
     },
-    {
-      title: "To-Do List",
-      description:
-        "Task management application allowing users to add, delete, and mark tasks as completed.",
-      image: tdl,
-      technologies: ["Js", "HTML", "CSS", "Webpack"],
-      github: "https://github.com/MohamedHamdy210/To-Do-List/",
-      live: "https://to-do-list-141y.vercel.app/",
-    },
   ];
 
   const skills = [
@@ -214,6 +218,8 @@ export default function Portfolio() {
     "Redux Toolkit",
     "Tailwind CSS",
     "GSAP",
+    "Firebase Auth",
+    "FireStore",
     "Material UI",
     "JavaScript",
     "Framer Motion",
